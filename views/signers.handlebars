@@ -1,0 +1,16 @@
+<main class="container-register-petition">
+    <section class="message-container-petition">
+        <h1>Keyboard Cat for president</h1>
+        <p> These people love Keyboard Cat and have already signed our petition
+        </p>
+    </section>
+
+    <div class="signatures">
+        {{#signers}}
+            <ul>
+                <li>{{first}} {{last}} {{age}} <a href="/signers/{{city}}">{{city}}</a></li>
+
+            </ul>
+        {{/signers}}
+
+    </div>

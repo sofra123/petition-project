@@ -1,0 +1,56 @@
+<main class="container-register">
+    <section class="container2">
+        <section class="message-container">
+
+            <h1>Keyboard Cat for president</h1>
+            <p>We need a more purrfect union. Vote for the right candidate! Keyboard Cat for presidential elections
+                2020.
+            </p>
+        </section>
+
+        <section class="video">
+            <iframe width="500" height="310" src="https://www.youtube.com/embed/J---aiyznGQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </section>
+    <section class="form-container">
+        <form method="POST">
+            {{#if error}}
+                <div class="error">Something went wrong. Please try again.</div>
+            {{/if}}
+            <span class="registerhere">Please register here</span>
+
+            <div class="name-section">
+                <input name="first" autocomplete="off" required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Name</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="last" autocomplete="off" required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Last</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="email" autocomplete="off" required>
+                <label for="email" class="label-name">
+                    <span class="content-name">E-Mail</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="password" type="password" autocomplete="off" required>
+                <label for="password" class="label-name">
+                    <span class="content-name">Password</span>
+                </label>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            </div>
+            <div class="button">
+                <button type="submit">SUBMIT</button>
+            </div>
+            <a href="/login">Already registered? Login here</a>
+        </form>
+    </section>
+
+</main>

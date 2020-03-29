@@ -1,0 +1,30 @@
+<main class="container-register-profile">
+    <section class="form-container">
+        <form method="POST">
+            <span class="registerhere">Tell us more about yourself</span>
+            <div class="name-section">
+                <input name="age" autocomplete="off">
+                <label for="age" class="label-name">
+                    <span class="content-name">age</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="city" autocomplete="off">
+                <label for="city" class="label-name">
+                    <span class="content-name">city</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="url" autocomplete="off">
+                <label for="url" class="label-name">
+                    <span class="content-name">homepage</span>
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                </label>
+            </div>
+            <div class="button">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </section>
+    </form>
+</main>

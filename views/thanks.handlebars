@@ -1,0 +1,54 @@
+<div class="leftandright">
+    <div class="left">
+        <section class="message-container-thanks-img">
+            <img src="images/happycat.png" alt="">
+        </section>
+
+        <section class="message-container-thanks">
+
+            <h1 class="thanks"> Excellent {{signatureData.first}} {{signatureData.last}}!
+                Thank you for signing.
+
+            </h1>
+        </section>
+    </div>
+
+
+
+    <div class="right">
+
+        <div class="sig-button">
+
+            <section class="yourSignature">
+
+                <img src="{{signatureData.sig}}" />
+
+
+                <div class="container-thanks">
+            </section>
+            <div class="buttons">
+                <section class="delete">
+                    <form method="POST" action="/signature/delete">
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+                        <div class="longbtn">
+                            <button class="deletebtn">Delete your signature</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="signers">
+                    <form method="POST">
+                        <input type="hidden" id="sig" name="sig">
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                        <div class="signers-btn">
+                            <button class="deletebtn">who signed our petition?</button>
+
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

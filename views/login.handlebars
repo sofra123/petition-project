@@ -1,0 +1,32 @@
+<main class="container-register">
+    <section class="message-container">
+        <h1>Keyboard Cat for president</h1>
+        <p>"Forget all candidates and support the purrfect president!" </br> New York Times
+        </p>
+        <p>"No more schemes, no more boring speaches. Keyboard Cat for hope, change and catnip!" </br>The Guardian</p>
+
+    </section>
+    <section class="form-container">
+        <form method="POST">
+            {{#if error}}
+                <div class="error">Wrong password and/or username.</div>
+            {{/if}}
+            <span class="registerhere">Login here</span>
+            <div class="name-section">
+                <input name="email" autocomplete="off" required>
+                <label for="email" class="label-name">
+                    <span class="content-name">E-Mail</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="password" type="password" autocomplete="off" required>
+                <label for="password" class="label-name">
+                    <span class="content-name">Password</span>
+                </label>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            </div>
+            <div class="button">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+</main>

@@ -1,0 +1,47 @@
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Petition</title>
+        <link rel="stylesheet" href="/stylesheet.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <!--<a href="/">
+                <img src="/images/logo.png">
+            </a> -->
+            <nav>
+                <ul>
+                    {{#if userLoggedIn}}
+                        <div class="imglogo">
+                            <a href="/home"></a>
+                        </div>
+                        <div class="right">
+                            <li><a href="/profile/edit">PROFILE</a></li>
+                            <li><a href="/logout">LOGOUT</a></li>
+                        </div>
+                    {{else}}
+                        <div class="imglogo">
+                            <a href="/home"></a>
+                        </div>
+                        <div class="right">
+                            <li><a href="/login">LOGIN</a></li>
+                            <li><a href="/register">REGISTER</a></li>
+                        </div>
+                    {{/if}}
+                </ul>
+            </nav>
+        </header>
+
+        {{{ body }}}
+        <br>
+        <br>
+    </body>
+
+
+</html>

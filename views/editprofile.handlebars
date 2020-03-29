@@ -1,0 +1,54 @@
+<main class="container-register-profile">
+    <section class="form-container-edit">
+        <form method="POST" action="/profile/edit">
+            <span class="registerhere">Update your profile data</span>
+
+            <div class="name-section">
+                <input name="first" value="{{first}}" autocomplete="off">
+                <label for="name" class="label-name">
+                    <span class="content-name">Name</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="last" value="{{last}}" autocomplete="off">
+                <label for="name" class="label-name">
+                    <span class="content-name">Last</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="email" value="{{email}}" autocomplete="off">
+                <label for="email" class="label-name">
+                    <span class="content-name">E-Mail</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="password" type="password" autocomplete="off">
+                <label for="password" class="label-name">
+                    <span class="content-name">Password</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="age" value="{{age}}" autocomplete="off">
+                <label for="age" class="label-name">
+                    <span class="content-name">age</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="city" autocomplete="off" value="{{city}}">
+                <label for="city" class="label-name">
+                    <span class="content-name">city</span>
+                </label>
+            </div>
+            <div class="name-section">
+                <input name="url" autocomplete="off" value="{{url}}">
+                <label for="url" class="label-name">
+                    <span class="content-name">homepage</span>
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                </label>
+            </div>
+            <div class="button">
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </section>
+</main>

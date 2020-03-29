@@ -1,0 +1,25 @@
+<main class="container-register-petition">
+    <section class="message-container-petition">
+        <h1>Purrfect choice!</h1>
+        <p> Please sign the petition and help Keyboard Cat to become president!</p>
+    </section>
+    <section class="canvas">
+        <form method="POST">
+            {{#if error}}
+                <div class="error">Please be sure to sign before submitting.</div>
+            {{/if}}
+            <div class="form">
+                <div class="canvas">
+                    <input type="hidden" id="sig" name="sig">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <canvas id="canvas" width="590" height="100"></canvas>
+                    <div class="canvas-msg">Please sign above.</div>
+                </div>
+
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>

@@ -1,0 +1,755 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+body {
+
+    color: #999999;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.80857;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+.left {}
+
+.right {}
+
+.container-home {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+.form-container {
+    width: 30%;
+    border: dotted crimson 2px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.registerhere {
+    font-family: 'Pacifico';
+    color: crimson;
+    font-size: 20px;
+
+}
+
+.container-register {
+    display: flex;
+    flex-direction: row;
+    padding-top: 225px;
+
+    justify-content: space-evenly;
+
+
+}
+
+header {}
+
+nav {
+    max-width: 100%;
+    height: 52px;
+    color: black;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+nav ul .imglogo {
+    text-align: center;
+}
+
+nav ul .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+
+nav ul li {
+
+    list-style: none;
+    padding-top: 17px;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    font-family: "roboto slab";
+    padding-right: 50px;
+
+}
+
+
+
+nav ul li .title a {
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    font-family: "Pacifico";
+
+}
+
+nav ul li a:hover {
+    color: crimson;
+    text-decoration: none;
+    font-weight: 700;
+    font-weight: bold;
+
+
+}
+
+
+
+.introduction {
+    float: left;
+}
+
+.introduction #text {
+    padding: 45px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+span .par1 {
+    font-size: 25px;
+    color: white;
+}
+
+
+header img {
+    width: 200px;
+}
+
+
+canvas {
+    border: dotted red 2px;
+    border-radius: 5px;
+
+}
+
+.canvas {
+
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+
+
+body {
+
+    height: auto;
+    width: auto;
+    margin: 0;
+
+
+
+}
+
+
+
+.button {
+
+    padding-top: 44px;
+    padding-bottom: 20px;
+}
+
+input {}
+
+
+
+
+/*main {
+
+
+    width: 100%;
+    min-height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}*/
+button {
+    width: 105px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+
+.name-section {
+    width: 100%;
+    position: relative;
+    height: 85px;
+    overflow: hidden;
+
+
+}
+
+.name-section input {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    padding-top: 58px;
+    font-size: 16px;
+
+
+}
+
+.name-section label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: solid 1px black;
+
+}
+
+
+
+
+.name-section label::after {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #0059b3;
+    ;
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+}
+
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.4s ease;
+}
+
+.name-section input:focus+.label-name .content-name,
+.name-section input:valid+.label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+
+}
+
+.name-section input:focus+.label-name::after,
+.name-section input:valid+.label-name::after {
+    transform: translateX(0%);
+}
+
+button {
+    border-radius: 15px;
+    background-color: #0059b3;
+    ;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.more h1 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    display: flex;
+
+}
+
+.message-container {
+    box-shadow: 34px 33px 16px -20px rgba(220 220 220),
+        34px -33px 16px -20px rgba(220 220 220);
+    height: fit-content;
+}
+
+
+.message-container h1 {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'roboto slab';
+    text-transform: uppercase;
+    color: crimson;
+
+
+}
+
+.message-container p {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 3em auto;
+    font-family: "roboto slab";
+    color: grey;
+    padding: 10px;
+}
+
+
+.message-container p:before {
+    content: "";
+    display: block;
+    width: 472px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+
+.message-container p:after {
+    content: "";
+    display: block;
+    width: 472px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+form span {
+    text-align: center;
+
+}
+
+form {
+
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: "roboto slab";
+
+
+
+}
+
+
+
+
+.message-container-petition {
+    box-shadow: 34px 33px 16px -20px rgba(220 220 220),
+        34px -33px 16px -20px rgba(220 220 220);
+    height: fit-content;
+    border: 1px solid grey;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 590px;
+}
+
+.container-register-petition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 290px;
+
+}
+
+
+
+
+.message-container-petition h1 {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'roboto slab';
+    text-transform: uppercase;
+    color: crimson;
+    padding-top: 26px;
+
+
+}
+
+.message-container-petition p {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 600px;
+    line-height: 1.8em;
+
+    font-family: "roboto slab";
+    color: grey;
+    padding: 10px;
+}
+
+.message-container-petition p:before {
+    content: "";
+    display: block;
+    width: 532px;
+    border: 2px solid #0059b3;
+    margin: 1em 1em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+
+.message-container-petition p:after {
+    content: "";
+    display: block;
+    width: 532px;
+    border: 2px solid #0059b3;
+    margin: 1em 1em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.canvas-msg {
+    font-family: "pacifico";
+    color: crimson;
+    padding: 10px;
+}
+
+.sig-button {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 43px;
+}
+
+
+.longbtn {}
+
+.message-container-thanks {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+.message-container-thanks-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 223px;
+}
+
+.message-container-thanks h1 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'roboto slab';
+    font-family: "Pacifico";
+    color: grey;
+    padding-top: 26px;
+    box-shadow: 34px 33px 16px -20px rgba(220 220 220),
+        34px -33px 16px -20px rgba(220 220 220);
+    height: fit-content;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+
+
+.yourSignature {
+    border: dotted 3px red;
+    width: 590px;
+    padding: 10px;
+}
+
+.thanks span {
+
+    font-family: "Pacifico";
+    color: #0059b3;
+}
+
+
+button.deletebtn {
+
+    width: 200px;
+}
+
+.delete {
+    padding: 20px;
+}
+
+.thanks img {
+
+    width: 200px;
+}
+
+.right {}
+
+.leftandright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-register-profile {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 270px;
+    justify-content: space-evenly;
+}
+
+
+.form-container-edit {
+
+    width: 68%;
+    border: dotted crimson 2px;
+    padding: 20px;
+    height: fit-content;
+}
+
+
+.signatures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+    padding-bottom: 116px;
+}
+
+.signatures li {
+
+
+    font-family: "roboto slab";
+    font-style: italic;
+    font-size: 19px;
+
+}
+
+
+.message-container-home {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.message-container-home p {
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 3em auto;
+    font-family: "roboto slab";
+    padding: 10px;
+
+}
+
+.message-container-home span {
+    font-size: 25px;
+
+
+    font-family: "roboto slab";
+    color: #0059b3;
+
+
+    padding: 10px;
+
+}
+
+
+
+
+.message-container-home p:before {
+    content: "";
+    display: block;
+    width: 309px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+
+.message-container-home p:after {
+    content: "";
+    display: block;
+    width: 309px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.message-container-home h1 {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'roboto slab';
+    text-transform: uppercase;
+    color: crimson;
+
+
+}
+
+.container-register-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+
+
+
+
+.message-container-home1 {
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 528px;
+    max-height: 528px;
+    line-height: 1.8em;
+    margin: 0em auto;
+    padding: 15px;
+    font-family: "pacifico";
+    color: yellow;
+}
+
+
+
+
+
+.message-container-home1 h1 a {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 560px;
+    line-height: 1.8em;
+    margin: 0em auto;
+    font-family: "pacifico";
+    color: red;
+    text-decoration: none;
+
+}
+
+
+.message-container-home1 p:before {
+    content: "";
+    display: block;
+    width: 309px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+
+.message-container-home1 p:after {
+    content: "";
+    display: block;
+    width: 309px;
+    border: 2px solid #0059b3;
+    margin: 1em 0em;
+    border-radius: 50px;
+    color: #0059b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+.img img {
+    width: 400px;
+    padding-top: 180px;
+}
